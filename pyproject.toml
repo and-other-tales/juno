@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "othertales-juno"
+version = "0.1.0"
+description = "A self-improving hierarchical multi-agent system that autonomously evaluates performance and modifies its codebase"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "David James", email = "david@othertales.co"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain>=0.1.0",
+    "langchain-anthropic>=0.1.5",
+    "langchain-openai>=0.1.5",
+    "langchain-community>=0.1.0",
+    "langchain-core>=0.1.15",
+    "langgraph-codeact>=0.0.5",
+    "langchain-sandbox>=0.0.1",
+    "pydantic>=2.0.0",
+    "tavily-python>=0.2.0",
+    "beautifulsoup4>=4.12.0",
+    "httpx>=0.25.0",
+    "typing-extensions>=4.8.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.23.0",
+    "pyyaml>=6.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+    "mypy>=1.5.0",
+    "pre-commit>=3.5.0",
+]
+
+[project.urls]
+"Homepage" = "https://othertales.co/juno"
+"Bug Tracker" = "https://github.com/othertales/juno/issues"
+"Source Code" = "https://github.com/othertales/juno"
+
+[project.scripts]
+othertales-juno = "othertales_juno.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "B", "W"]
+ignore = ["E203", "E722"]
+
+[tool.ruff.isort]
+known-first-party = ["othertales_juno"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+strict_optional = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "--strict-markers --tb=short"
+asyncio_mode = "auto"

@@ -1,0 +1,150 @@
+{
+    "title": "Self-improving Hierarchical Agent Teams",
+    "graph_name": "Self-improving Hierarchical Agent Teams",
+    "description": "A self-improving hierarchical multi-agent system with research, writing, and Juno teams",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "messages": {
+                "type": "array",
+                "description": "List of messages in the conversation",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "role": {
+                            "type": "string",
+                            "enum": ["user", "assistant", "system", "function", "tool"]
+                        },
+                        "content": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["role", "content"]
+                }
+            }
+        },
+        "required": ["messages"]
+    },
+    "output_schema": {
+        "type": "object",
+        "properties": {
+            "messages": {
+                "type": "array",
+                "description": "List of messages in the conversation",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "role": {
+                            "type": "string",
+                            "enum": ["user", "assistant", "system", "function", "tool"]
+                        },
+                        "content": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["role", "content"]
+                }
+            },
+            "research_result": {
+                "type": "string",
+                "description": "Result from the research team"
+            },
+            "writing_result": {
+                "type": "string",
+                "description": "Result from the writing team"
+            },
+            "juno_result": {
+                "type": "string",
+                "description": "Result from the Juno team"
+            },
+            "current_task": {
+                "type": "string",
+                "description": "Current task being processed"
+            },
+            "completed_tasks": {
+                "type": "array",
+                "description": "List of completed tasks",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "metrics": {
+                "type": "array",
+                "description": "Performance metrics for tasks",
+                "items": {
+                    "type": "object"
+                }
+            },
+            "issues_identified": {
+                "type": "array",
+                "description": "Issues identified by the Juno team",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "fixes_implemented": {
+                "type": "array",
+                "description": "Fixes implemented by the Juno team",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "cycle_count": {
+                "type": "integer",
+                "description": "Count of completed autonomous cycles"
+            }
+        },
+        "required": ["messages"]
+    },
+    "config_schema": {
+        "type": "object",
+        "properties": {
+            "model_provider": {
+                "type": "string",
+                "enum": ["openai", "anthropic"],
+                "description": "The provider for the LLM"
+            },
+            "model_name": {
+                "type": "string",
+                "description": "The name of the model to use"
+            },
+            "working_directory": {
+                "type": "string",
+                "description": "Directory for document creation and storage"
+            },
+            "auto_generate_tasks": {
+                "type": "boolean",
+                "description": "Whether to auto-generate tasks",
+                "default": true
+            },
+            "recursion_limit": {
+                "type": "integer",
+                "description": "Maximum number of recursive calls",
+                "default": 100
+            },
+            "max_cycles": {
+                "type": "integer",
+                "description": "Maximum number of autonomous cycles",
+                "default": 10
+            },
+            "allow_code_changes": {
+                "type": "boolean",
+                "description": "Whether to allow code changes by the Juno team",
+                "default": true
+            },
+            "debug_mode": {
+                "type": "boolean",
+                "description": "Enable debug mode",
+                "default": false
+            }
+        }
+    },
+    "entrypoint": "agent:graph",
+    "initial_message": "I am a self-improving hierarchical agent system with research, writing, and Juno teams. I can autonomously generate tasks and improve my own performance. Enter a task or let me generate one automatically."
+}
