@@ -65,7 +65,7 @@ Othertales Juno operates on a continuous improvement cycle:
 11. **Resource Testing**: New resources are monitored and evaluated for effectiveness
 12. **Cycle Restart**: The system begins a new task with improved capabilities and optimized resources
 
-![Workflow Diagram](/img/workflow.png)
+<img src="/img/workflow.png" alt="Workflow Diagram" width="50%">
 
 This creates a genuinely self-improving system that gets better over time and adapts to changing workload demands without human intervention.
 
