@@ -249,3 +249,6 @@ Othertales Juno is built using [LangGraph](https://github.com/langchain-ai/langg
 
 
 Copyright © 2025 Adventures of the Persistently Impaired (...and Other Tales) Limited of 85 Great Portland Street, London W1W 7LT
+
+© 2025 Other Tales, Inc. All rights reserved.  
+This repository is proprietary software. Unauthorized copying, modification, distribution, or use is prohibited. See LICENSE.md.
