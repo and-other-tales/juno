@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Juno team implementation for monitoring and improving the system."""
 
 import time

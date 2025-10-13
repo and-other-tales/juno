@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Hierarchical agent teams implementation using LangGraph.
 
 This module creates a hierarchical multi-agent system with:

@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Resource monitoring and testing for the Juno system."""
 
 import time

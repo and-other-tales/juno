@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Define the state structures for the agent."""
 
 from __future__ import annotations

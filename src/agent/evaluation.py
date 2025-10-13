@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Evaluation module for the Juno system."""
 
 import time

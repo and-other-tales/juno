@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Integration tests for dynamic workload and resource scaling."""
 
 import time

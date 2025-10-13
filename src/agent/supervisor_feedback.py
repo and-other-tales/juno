@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Supervisor feedback and grading system for team outputs."""
 
 import time

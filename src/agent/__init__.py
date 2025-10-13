@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Hierarchical Agent Teams module.
 
 This package implements a hierarchical agent system with specialized teams for research and writing.

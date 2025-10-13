@@ -1,3 +1,4 @@
+<!-- Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved. -->
 # Othertales Juno - Self-Improving System Status
 
 ## Implementation Overview

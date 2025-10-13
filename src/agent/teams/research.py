@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Research team implementation for hierarchical agent teams."""
 
 from typing import Literal, Annotated, Dict, Any

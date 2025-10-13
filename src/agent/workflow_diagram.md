@@ -1,3 +1,4 @@
+<!-- Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved. -->
 # Othertales Juno Workflow Diagram
 
 The following Mermaid diagram illustrates the self-improving workflow for Othertales Juno, showing how the system evaluates its performance, identifies resource constraints, and deploys improved code and resources.

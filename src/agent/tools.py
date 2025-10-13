@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Define the tools for the hierarchical agent teams."""
 
 import os

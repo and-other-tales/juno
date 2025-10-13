@@ -1,3 +1,4 @@
+# Copyright © 2025 PI & Other Tales Inc.. All Rights Reserved.
 """Utilities for hierarchical agent teams."""
 
 from typing import List, Literal, Dict, Any, Optional, Callable, cast
