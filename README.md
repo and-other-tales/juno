@@ -4,6 +4,9 @@
 [![EULA](https://img.shields.io/badge/EULA-PI%20%26%20Other%20Tales%2C%20Inc.-purple)](https://othertales.co/eula)
 
 
+[![EULA](https://img.shields.io/badge/EULA-PI%20%26%20Other%20Tales%2C%20Inc.-purple)](https://othertales.co/eula)
+
+
 ![Othertales Juno](https://img.shields.io/badge/Othertales-Juno-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
